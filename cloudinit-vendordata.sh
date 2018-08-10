@@ -9,8 +9,8 @@
 ### Some variables
 
 REPOFILE_SERV=100.125.xxx.xxx
-TMP_REPO=/var/tmp/otc-repos.in
-LOGF=/var/log/otc-vendordata.log
+TMP_REPO=/var/tmp/xxxxx-repos.in
+LOGF=/var/log/xxxxx-vendordata.log
 
 ### Main
 
@@ -63,10 +63,10 @@ echo "Public/Private Image, start the configuration..." | tee -a $LOGF
 
 # Source the repo file
 THISDIR=`dirname "$0"`
-if test -e $THISDIR/otc-repos.in -a "$1" == "--forceall"; then
-   source $THISDIR/otc-repos.in
+if test -e $THISDIR/xxxxx-repos.in -a "$1" == "--forceall"; then
+   source $THISDIR/xxxxx-repos.in
 else
-   curl -sSLk https://$REPOFILE_SERV/repo/tools/otc-repos.in > $TMP_REPO
+   curl -sSLk https://$REPOFILE_SERV/repo/tools/xxxxx-repos.in > $TMP_REPO
    source $TMP_REPO
    rm $TMP_REPO
 fi
