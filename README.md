@@ -1,4 +1,4 @@
-# BYOLWebService
+# BYOL WebService
 ----------------
 1. Post-Sysprep-Windows.ps1 is for windows which located in C:\Program Files\Cloudbase Solutions\Cloudbase-Init\LocalScripts\.
 
