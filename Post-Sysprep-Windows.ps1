@@ -38,7 +38,7 @@ if ($meta.meta.byol -match 'true') {
 
 }
 
-if ($meta.availability_zone -match 'ap-sg') {
+<# if ($meta.availability_zone -match 'ap-sg') {
     'change time zone for SGP' | Out-File  -FilePath $log -Append
     'change time zone for SGP' | Write-Host
     C:\scripts\packages\Timezone_Config\Timezone_Config_V1.1.ps1 'XXXXXXXX_Standard_Time'
@@ -98,9 +98,8 @@ if (Test-Path "C:\Program Files\NVIDIA Corporation\NVSMI\nvidia-smi.exe") {
     # exit 1002 # - don’t reboot now and run the plugin again on next boot
     # exit 1003 # - reboot and run the plugin again on next boot
 }
-
 #>
 
 "{0:yyyy-MM-dd HH:mm:ss} " -f $(Get-Date ) | Out-File -FilePath $log -Append
-
+#>
 exit 0
